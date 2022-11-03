@@ -1,0 +1,19 @@
+Install depedencies from "requirements.txt"
+
+Download datasets from mrqa repository "https://github.com/mrqa/MRQA-Shared-Task-2019"
+
+Few-shot splits can be downloaded from:
+    curl -L https://www.dropbox.com/sh/pfg8j6yfpjltwdx/AAC8Oky0w8ZS-S3S5zSSAuQma?dl=1 > mrqa-few-shot.zip
+    unzip mrqa-few-shot.zip -d mrqa-few-shot
+
+
+Training models:
+    DyReF:
+        bash run_dyref.sh
+
+    Vanilla qa:
+        run_vanilla.sh
+
+    Please modify the sh files before running, especially OUTPUT_DIR, MODEL, TRAIN_FILE and PREDICT_FILE
+
+- "attention-visualization.ipynb" for attention visualization
